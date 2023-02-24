@@ -1,31 +1,27 @@
+import { useState } from 'react'
+
 const App = () => {
-    const course = {
-      name: 'Half Stack application development',
-      id: 1,
-      parts: [
-        {
-          name: 'Fundamentals of React',
-          exercises: 10,
-          id: 1
-        },
-        {
-          name: 'Using props to pass data',
-          exercises: 7,
-          id: 2
-        },
-        {
-          name: 'State of a component',
-          exercises: 14,
-          id: 3
-        }
-      ]
-    }
-  
-    return (
-      <div>
-       {/*  <Course course={course} /> */}
-      </div>
-    )
-  };
-  
-  export default App;
+  const [persons, setPersons] = useState([
+    { name: 'Arto Hellas' }
+  ]);
+  const [newName, setNewName] = useState('');
+
+  return (
+    <div>
+      <h2>Phonebook</h2>
+      <form>
+        <div>
+          name: <input />
+        </div>
+        <div>
+          <button type="submit">add</button>
+        </div>
+      </form>
+      <h2>Numbers</h2>
+      ...
+    </div>
+  )
+
+};
+
+export default App;
