@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'https://fullstack-phonebook-uis0.onrender.com/api/persons';
+const baseUrl = '/api/persons';
 
 const getAllPersons = () => {
   return axios.get(baseUrl);
