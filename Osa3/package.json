@@ -203,7 +203,6 @@
     "escape-html": "^1.0.3",
     "escape-string-regexp": "^1.0.5",
     "escodegen": "^2.0.0",
-    "eslint": "^8.34.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-jsx": "^11.0.0",
@@ -469,6 +468,7 @@
     "minimatch": "^3.1.2",
     "minimist": "^1.2.8",
     "mkdirp": "^0.5.6",
+    "mongoose": "^7.0.2",
     "morgan": "^1.10.0",
     "ms": "^2.1.2",
     "multicast-dns": "^7.2.5",
@@ -837,6 +837,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.37.0",
     "nodemon": "^2.0.21",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1"
