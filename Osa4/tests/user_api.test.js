@@ -4,7 +4,6 @@ const supertest = require('supertest');
 const app = require('../app');
 const helper = require('./test_helper')
 const User = require('../models/blog');
-const { result } = require("lodash");
 const api = supertest(app);
 
 describe('When there is initially one user at db', () => {  
