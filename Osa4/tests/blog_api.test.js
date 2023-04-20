@@ -54,7 +54,7 @@ test("id instead of _id", async () => {
     const blogsAtEnd = await helper.blogsInDb();
     expect(blogsAtEnd).toHaveLength(helper.initialBlogs.length + 1);
     const title = blogsAtEnd.map(blog => blog.title);
-    expect(title).toContain("testi2");
+    expect(title).toContain(newBlog.title);
 });
 
 test("Empty likes = 0", async () => {
