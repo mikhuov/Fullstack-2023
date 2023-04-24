@@ -60,7 +60,8 @@ blogRouter.delete('/:id', async (request, response) => {
 });
 
 blogRouter.put('/:id', async (request, response) => {
-    const blogToUpdate = await Blog.findByIdAndUpdate(request.params.id, request.body);
+    const { title, author, url, likes, user } = request.body
+    const blogToUpdate = await Blog.findByIdAndUpdate(request.params.id, { title, author, url, likes }, { new: true });
     response.status(200).json(blogToUpdate.toJSON());
 });
 

@@ -1,0 +1,26 @@
+.success {
+    color: #ee7c35;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    max-width: 10%;
+  }
+  
+  .error {
+    color: red;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+    max-width: 10%;
+  }
+
+  .blog-border {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
