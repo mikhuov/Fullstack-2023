@@ -30,8 +30,8 @@ const Togglable = forwardRef((props, ref) => {  const [visible, setVisible] = us
 });
 
 Togglable.propTypes = {
-    buttonLabel: PropTypes.func.isRequired,
-    children: PropTypes.func.isRequired
+    buttonLabel: PropTypes.string.isRequired,
+    children: PropTypes.string.isRequired
 };
 
 export default Togglable;

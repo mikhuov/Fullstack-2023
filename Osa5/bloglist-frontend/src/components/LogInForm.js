@@ -6,10 +6,10 @@ const LogInForm = (props) => {
         <form onSubmit={ props.handleLogin }>
             <h2>Log In To Application</h2>
             <div>
-                username: <input name="username" type="text" value={ props.username } required onChange={({ target }) => props.setUsername(target.value)}></input>
+                username: <input name="username" id="username" type="text" value={ props.username } required onChange={({ target }) => props.setUsername(target.value)}></input>
             </div>
             <div>
-                password: <input name="password" type="text" value={ props.password } required onChange={({ target }) => props.setPassword(target.value)}></input>
+                password: <input name="password" id="password" type="text" value={ props.password } required onChange={({ target }) => props.setPassword(target.value)}></input>
             </div>
             <div>
                 <button id='login-button' type="submit">Login</button>
