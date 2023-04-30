@@ -18,7 +18,7 @@ describe('Blog App', () => {
         cy.visit('http://localhost:3000/');
     });
 
-    /*it('Login form is shown', () => {
+    it('Login form is shown', () => {
         cy.contains('Log In To Application');
         cy.contains('Login');
 
@@ -82,7 +82,7 @@ describe('Blog App', () => {
             cy.get('#delete-button').click();
             cy.get('html').should('not.contain', 'hassel Blogi');
         });
-    }); */
+    });
 
     describe('Blog is sorted by amount of likes', function() {
         beforeEach(function() {
