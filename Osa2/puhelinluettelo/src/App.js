@@ -27,7 +27,7 @@ const App = () => {
     event.preventDefault();
     const personExists = persons.filter(person => person.name === newPerson.name);
 
-    if (personExists != 0) {
+    if (personExists !== 0) {
       personsService.updatePerson(personExists[0].id, newPerson).then(() => {
         setMessage(`Updated ${ newPerson.name }'s number`)
       }).catch(() => {
